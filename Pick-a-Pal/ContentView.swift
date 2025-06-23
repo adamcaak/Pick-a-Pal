@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var names: [String] = ["Elisha", "Andrea", "Monica", "Eugene"]
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            List {
+                ForEach(names, id: \.description) { name in
+                    Text(name)
+                }
+            }
         }
         .padding()
     }
