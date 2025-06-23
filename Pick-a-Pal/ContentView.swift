@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var names: [String] = ["Elisha", "Andrea", "Monica", "Eugene"]
+    @State private var names: [String] = []
     @State private var addName: String = ""
     @State private var pickedName: String = ""
     @State private var shouldRemovePickedName: Bool = false
