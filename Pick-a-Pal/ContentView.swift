@@ -29,6 +29,7 @@ struct ContentView: View {
                         addName = ""
                     }
                 }
+            Divider()
             Button("Picked Random Name") {
                 if let randomName = names.randomElement() {
                     pickedName = randomName
