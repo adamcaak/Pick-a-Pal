@@ -19,7 +19,8 @@ struct ContentView: View {
                 }
             }
             
-            TextField("Add name", text: $addName)
+            TextField("Add Name:", text: $addName)
+                .autocorrectionDisabled(true)
                 .onSubmit {
                     if !addName.isEmpty {
                         names.append(addName)
